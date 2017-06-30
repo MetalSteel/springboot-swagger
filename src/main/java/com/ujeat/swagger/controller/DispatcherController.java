@@ -9,8 +9,12 @@ import org.springframework.web.bind.annotation.PathVariable;
  */
 @Controller
 public class DispatcherController {
-    @GetMapping("/{page}")
-    public String dispatcher(@PathVariable("page") String page){
-        return page;
+    /**
+     * 首页
+     * @return
+     */
+    @GetMapping("/index")
+    public String index(){
+        return "index";
     }
 }
